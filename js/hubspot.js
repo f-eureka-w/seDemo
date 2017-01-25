@@ -2,6 +2,10 @@
 // uses serialize to spilt and organize data format that is readable 
 // ajax submission via POST method 
 
+
+var https = require('https');
+var querystring = require('querystring');
+
 $("form").submit(function( event ) {
   event.preventDefault();
   var data = $(this).serialize();

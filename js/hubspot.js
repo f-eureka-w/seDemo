@@ -8,10 +8,10 @@ $("form").submit(function( event ) {
   var email = data[2].split("=")[1];
   var list = data[3].split("=")[1];
   $.ajax({
-  	type:"POST",
+  	method:"POST",
   	url: "https://forms.hubspot.com/uploads/form/v2/1787193/6e2cf8f0-b777-4b7f-ba9f-5931af95f432",
-  	data: {firstName: firstName, lastName: lastName, email:email, list:list}
-  	
+  	data: {firstName: firstName, lastName: lastName, email:email, what_analytics_do_you_need_:list}
+
   })
 });
 

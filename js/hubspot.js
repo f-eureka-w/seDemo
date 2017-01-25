@@ -30,7 +30,7 @@ $("form").submit(function( event ) {
 		hsfirstvisit: hsfirstvisit,
 		__hstc: __hstc,
 		__hssrc:__hssrc,
-		hubspotutk:hubspotutk,
+		hutk:hubspotutk,
 		pageName: "Smallytics",
 		hs_analytics_first_url: "https://f-eureka-w.github.io/seDemo/"
 		} 

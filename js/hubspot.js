@@ -52,7 +52,6 @@ $("form").submit(function( event ) {
 		{
 			hutk: hubspotutk,
 			ipAddress: 
-			pageUrl: "https%3A%2F%2Ff-eureka-w.github.io%2FseDemo%2F",
 			pageName: SeDemo,
 		}
 		pageName: "Smallytics",

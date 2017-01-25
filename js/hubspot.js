@@ -37,7 +37,7 @@ $("form").submit(function( event ) {
 		hsfirstvisit: hsfirstvisit,
 		__hstc: __hstc,
 		__hssrc:__hssrc,
-		hutk: hubspotutk
+		hutk: hubspotutk,
 		'hs_context': JSON.stringify({
         	"hutk": req.cookies.hubspotutk,
         	"ipAddress": req.headers['x-forwarded-for'] || req.connection.remoteAddress,

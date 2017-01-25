@@ -5,7 +5,7 @@ $("form").submit(function( event ) {
   data = data.split("&");
   var firstName = data[0].split("=")[1];
   var lastName = data[1].split("=")[1];
-  var email = data[2].split("=")[1].replace("&40", "@");
+  var email = data[2].split("=")[1].replace("%40", "@");
   var list = data[3].split("=")[1];
   $.ajax({
   	method:"POST",

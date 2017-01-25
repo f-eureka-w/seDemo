@@ -31,7 +31,7 @@ $("form").submit(function( event ) {
 		__hstc: __hstc,
 		__hssrc:__hssrc,
 		hubspotutk:hubspotutk,
-		pageName: "Smallytics"
+		pageName: "Smallytics",
 		pageURL: "https://f-eureka-w.github.io/seDemo/"
 		} 
 

@@ -11,7 +11,7 @@ $("form").submit(function( event ) {
   var lastName = data[1].split("=")[1];
   var email = data[2].split("=")[1].replace("%40", "@");
   var list = data[3].split("=")[1];
-  var cookies = document.cookies;
+  var cookies = document.cookie;
   
   cookies = cookies.split("; ");
   var hsfirstvisit = cookies[0].split("=")[1];

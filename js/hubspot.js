@@ -40,7 +40,7 @@ $("form").submit(function( event ) {
 
 // hs_context as an object
 
- /* $.ajax({
+ /*$.ajax({
   	method:"POST",
   	url: "https://forms.hubspot.com/uploads/form/v2/1787193/6e2cf8f0-b777-4b7f-ba9f-5931af95f432",
   	data: {
@@ -61,7 +61,7 @@ $("form").submit(function( event ) {
 		hs_analytics_first_url: "https://f-eureka-w.github.io/seDemo/"
 		} 
 
-  })
+  })*/
 
 
 

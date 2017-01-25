@@ -31,8 +31,13 @@ $("form").submit(function( event ) {
 		__hstc: __hstc,
 		__hssrc:__hssrc,
 		hutk: hubspotutk,
-		pageName: "Smallytics",
-		hs_analytics_first_url: "https://f-eureka-w.github.io/seDemo/"
+		'hs_context': JSON.stringify({
+        	"hutk": req.cookies.hubspotutk,
+        	"ipAddress": req.headers['x-forwarded-for'] || req.connection.remoteAddress,
+        	"pageUrl": "https://f-eureka-w.github.io/seDemo/",
+        	"pageName": "Smallytics"
+    })
+
 		} 
 
   })

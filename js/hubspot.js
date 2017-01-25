@@ -3,8 +3,11 @@
 // ajax submission via POST method 
 
 
-var https = require('https');
-var querystring = require('querystring');
+//requirejs(['https', 'querystring'],
+//function   (https, querystring) {
+    //jQuery, canvas and the app/sub module are all
+    //loaded and can be used here now.
+
 
 $("form").submit(function( event ) {
   event.preventDefault();
@@ -35,17 +38,25 @@ $("form").submit(function( event ) {
 		__hstc: __hstc,
 		__hssrc:__hssrc,
 		hutk: hubspotutk,
-		'hs_context': JSON.stringify({
-        	"hutk": req.cookies.hubspotutk,
-        	"ipAddress": req.headers['x-forwarded-for'] || req.connection.remoteAddress,
-        	"pageUrl": "https://f-eureka-w.github.io/seDemo/",
-        	"pageName": "Smallytics"
-    })
+		//'hs_context': JSON.stringify({
+        //	"hutk": req.cookies.hubspotutk,
+        //	"ipAddress": req.headers['x-forwarded-for'] || req.connection.remoteAddress,
+        //	"pageUrl": "https://f-eureka-w.github.io/seDemo/",
+        //	"pageName": "Smallytics"
+   // })
 
 		} 
 
   })
 
+  $(this).remove();
+  $("#thankyou").css("display","block");
+
+});
+
+
+// closing for requireJS
+//});
 
 // hs_context as an object
 
@@ -75,10 +86,6 @@ $("form").submit(function( event ) {
 
 
 
-  $(this).remove();
-  $("#thankyou").css("display","block");
-
-});
 
 
 //"hsfirstvisit=https%3A%2F%2Ff-eureka-w.github.io%2FseDemo%2F||1485308822978; __hstc=5909356.de59346f29464ede746f1cbe83d63111.1485308822980.1485308822980.1485308822980.1; __hssrc=1; __hssc=5909356.12.1485308822981; hubspotutk=de59346f29464ede746f1cbe83d63111"

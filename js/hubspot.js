@@ -31,9 +31,14 @@ $("form").submit(function( event ) {
 		__hstc: __hstc,
 		__hssrc:__hssrc,
 		hubspotutk:hubspotutk,
+		pageName: "Smallytics"
+		pageURL: "https://f-eureka-w.github.io/seDemo/"
 		} 
 
   })
+
+  $(this).remove();
+  $("#thankyou").css("display","block");
 
 });
 

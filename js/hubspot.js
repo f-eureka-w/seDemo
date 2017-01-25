@@ -27,14 +27,14 @@ $("form").submit(function( event ) {
   		lastName: lastName, 
   		email:email, 
   		what_analytics_do_you_need_:list, 
-		hs_context:{
-			hsfirstvisit: hsfirstvisit,
-			__hstc: __hstc,
-			__hssrc:__hssrc,
-			hubspotutk:hubspotutk,
-		} }
+		hsfirstvisit: hsfirstvisit,
+		__hstc: __hstc,
+		__hssrc:__hssrc,
+		hubspotutk:hubspotutk,
+		} 
 
   })
+
 });
 
 

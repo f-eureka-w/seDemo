@@ -19,28 +19,28 @@ $("form").submit(function( event ) {
   var __hssrc = cookies[2].split("=")[1];
   var hubspotutk = cookies[3].split("=")[1];
 
-  //$.ajax({
-  	//method:"POST",
-  	//url: "https://forms.hubspot.com/uploads/form/v2/1787193/6e2cf8f0-b777-4b7f-ba9f-5931af95f432",
-  	//data: {
-  		//firstName: firstName, 
-  		//lastName: lastName, 
-  		//email:email, 
-  		//what_analytics_do_you_need_:list, 
-		//hsfirstvisit: hsfirstvisit,
-		//__hstc: __hstc,
-		//__hssrc:__hssrc,
-		//hutk: hubspotutk,
-		//pageName: "Smallytics",
-		//hs_analytics_first_url: "https://f-eureka-w.github.io/seDemo/"
-		//} 
-
-  //})
-
-
-// NOAH's attempt
-
   $.ajax({
+  	method:"POST",
+  	url: "https://forms.hubspot.com/uploads/form/v2/1787193/6e2cf8f0-b777-4b7f-ba9f-5931af95f432",
+  	data: {
+  		firstName: firstName, 
+  		lastName: lastName, 
+  		email:email, 
+  		what_analytics_do_you_need_:list, 
+		hsfirstvisit: hsfirstvisit,
+		__hstc: __hstc,
+		__hssrc:__hssrc,
+		hutk: hubspotutk,
+		pageName: "Smallytics",
+		hs_analytics_first_url: "https://f-eureka-w.github.io/seDemo/"
+		} 
+
+  })
+
+
+// hs_context as an object
+
+ /* $.ajax({
   	method:"POST",
   	url: "https://forms.hubspot.com/uploads/form/v2/1787193/6e2cf8f0-b777-4b7f-ba9f-5931af95f432",
   	data: {
@@ -52,13 +52,16 @@ $("form").submit(function( event ) {
 		{
 			hutk: hubspotutk,
 			ipAddress: 
-			pageName: SeDemo,
+			pageUrl:
+			pageName:
+			redirectUrl:
+			sfdcCampaignId
 		}
 		pageName: "Smallytics",
 		hs_analytics_first_url: "https://f-eureka-w.github.io/seDemo/"
 		} 
 
-  })
+  }) */
 
 
 

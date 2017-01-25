@@ -19,6 +19,27 @@ $("form").submit(function( event ) {
   var __hssrc = cookies[2].split("=")[1];
   var hubspotutk = cookies[3].split("=")[1];
 
+  //$.ajax({
+  	//method:"POST",
+  	//url: "https://forms.hubspot.com/uploads/form/v2/1787193/6e2cf8f0-b777-4b7f-ba9f-5931af95f432",
+  	//data: {
+  		//firstName: firstName, 
+  		//lastName: lastName, 
+  		//email:email, 
+  		//what_analytics_do_you_need_:list, 
+		//hsfirstvisit: hsfirstvisit,
+		//__hstc: __hstc,
+		//__hssrc:__hssrc,
+		//hutk: hubspotutk,
+		//pageName: "Smallytics",
+		//hs_analytics_first_url: "https://f-eureka-w.github.io/seDemo/"
+		//} 
+
+  //})
+
+
+// NOAH's attempt
+
   $.ajax({
   	method:"POST",
   	url: "https://forms.hubspot.com/uploads/form/v2/1787193/6e2cf8f0-b777-4b7f-ba9f-5931af95f432",
@@ -27,15 +48,23 @@ $("form").submit(function( event ) {
   		lastName: lastName, 
   		email:email, 
   		what_analytics_do_you_need_:list, 
-		hsfirstvisit: hsfirstvisit,
-		__hstc: __hstc,
-		__hssrc:__hssrc,
-		hutk: hubspotutk,
+		hs_context:
+		{
+			hutk: hubspotutk,
+			ipAddress: 
+			pageUrl: 
+			pageName: 
+			redirectUrl: 
+			sfdcCampaignId: 
+		}
 		pageName: "Smallytics",
 		hs_analytics_first_url: "https://f-eureka-w.github.io/seDemo/"
 		} 
 
   })
+
+
+
 
   $(this).remove();
   $("#thankyou").css("display","block");
@@ -43,7 +72,7 @@ $("form").submit(function( event ) {
 });
 
 
-//"hsfirstvisit=https%3A%2F%2Ff-eureka-w.github.io%2FseDemo%2F||1485308822978; __hstc=5909356.de59346f29464ede746f1cbe83d63111.1485308822980.1485308822980.1485308822980.1; __hssrc=1; __hssc=5909356.12.1485308822981; hubspotutk=de59346f29464ede746f1cbe83d63111"
+"hsfirstvisit=https%3A%2F%2Ff-eureka-w.github.io%2FseDemo%2F||1485308822978; __hstc=5909356.de59346f29464ede746f1cbe83d63111.1485308822980.1485308822980.1485308822980.1; __hssrc=1; __hssc=5909356.12.1485308822981; hubspotutk=de59346f29464ede746f1cbe83d63111"
 
 // cookies to capture: hsfirstvisit, __hstc, __hssrc, hubspotutk 
 // //HID = 1787193

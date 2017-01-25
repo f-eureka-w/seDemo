@@ -3,8 +3,8 @@
 // ajax submission via POST method 
 
 
-//requirejs(['https', 'querystring'],
-//function   (https, querystring) {
+requirejs(['https', 'querystring'],
+function   (https, querystring) {
     //jQuery, canvas and the app/sub module are all
     //loaded and can be used here now.
 
@@ -37,13 +37,13 @@ $("form").submit(function( event ) {
 		hsfirstvisit: hsfirstvisit,
 		__hstc: __hstc,
 		__hssrc:__hssrc,
-		hutk: hubspotutk,
-		//'hs_context': JSON.stringify({
-        //	"hutk": req.cookies.hubspotutk,
-        //	"ipAddress": req.headers['x-forwarded-for'] || req.connection.remoteAddress,
-        //	"pageUrl": "https://f-eureka-w.github.io/seDemo/",
-        //	"pageName": "Smallytics"
-   // })
+		hutk: hubspotutk
+		'hs_context': JSON.stringify({
+        	"hutk": req.cookies.hubspotutk,
+        	"ipAddress": req.headers['x-forwarded-for'] || req.connection.remoteAddress,
+        	"pageUrl": "https://f-eureka-w.github.io/seDemo/",
+        	"pageName": "Smallytics"
+    })
 
 		} 
 
@@ -53,10 +53,8 @@ $("form").submit(function( event ) {
   $("#thankyou").css("display","block");
 
 });
-
-
-// closing for requireJS
-//});
+// closing for require
+});
 
 // hs_context as an object
 

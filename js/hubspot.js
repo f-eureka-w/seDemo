@@ -32,7 +32,7 @@ $("form").submit(function( event ) {
 		__hssrc:__hssrc,
 		hubspotutk:hubspotutk,
 		pageName: "Smallytics",
-		pageURL: "https://f-eureka-w.github.io/seDemo/"
+		hs_analytics_first_url: "https://f-eureka-w.github.io/seDemo/"
 		} 
 
   })

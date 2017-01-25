@@ -52,10 +52,8 @@ $("form").submit(function( event ) {
 		{
 			hutk: hubspotutk,
 			ipAddress: 
-			pageUrl: 
-			pageName: 
-			redirectUrl: 
-			sfdcCampaignId: 
+			pageUrl: "https://f-eureka-w.github.io/seDemo/",
+			pageName: SeDemo,
 		}
 		pageName: "Smallytics",
 		hs_analytics_first_url: "https://f-eureka-w.github.io/seDemo/"

@@ -39,7 +39,7 @@ $("form").submit(function( event ) {
 		__hssrc:__hssrc,
 		hutk: hubspotutk,
 		hs_analytics_first_url: "https://f-eureka-w.github.io/seDemo/"
-		
+
 		//'hs_context': JSON.stringify({
         //	"hutk": req.cookies.hubspotutk,
         //	"ipAddress": req.headers['x-forwarded-for'] || req.connection.remoteAddress,
@@ -88,7 +88,7 @@ $("form").submit(function( event ) {
 
 
 
-//"hsfirstvisit=https%3A%2F%2Ff-eureka-w.github.io%2FseDemo%2F||1485308822978; __hstc=5909356.de59346f29464ede746f1cbe83d63111.1485308822980.1485308822980.1485308822980.1; __hssrc=1; __hssc=5909356.12.1485308822981; hubspotutk=de59346f29464ede746f1cbe83d63111"
+"hsfirstvisit=https%3A%2F%2Ff-eureka-w.github.io%2FseDemo%2F||1485308822978; __hstc=5909356.de59346f29464ede746f1cbe83d63111.1485308822980.1485308822980.1485308822980.1; __hssrc=1; __hssc=5909356.12.1485308822981; hubspotutk=de59346f29464ede746f1cbe83d63111"
 
 // cookies to capture: hsfirstvisit, __hstc, __hssrc, hubspotutk 
 // //HID = 1787193
